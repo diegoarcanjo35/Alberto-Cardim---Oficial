@@ -1,0 +1,6 @@
+{
+  "name": "ACN — Alberto C. Cardim Neto Advogados",
+  "description": "Escritório jurídico boutique de alta complexidade especializado em Direito Corporativo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

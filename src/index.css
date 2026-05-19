@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Playfair Display', ui-serif, Georgia, serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-[#050505] text-[#D1D5DB] antialiased selection:bg-white selection:text-black;
+  margin: 0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#050505];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#1A1A1A] hover:bg-white/20 transition-all rounded-full;
+}
+
+/* Utility Animations */
+@keyframes glow {
+  0% { box-shadow: 0 0 5px rgba(255,255,255,0.05); }
+  50% { box-shadow: 0 0 20px rgba(255,255,255,0.1); }
+  100% { box-shadow: 0 0 5px rgba(255,255,255,0.05); }
+}
+
+.animate-glow {
+  animation: glow 4s infinite ease-in-out;
+}
+
+/* Glassmorphism */
+.glass {
+  @apply bg-white/[0.03] backdrop-blur-xl border border-white/5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
